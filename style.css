@@ -1,0 +1,30 @@
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(61, 61, 61, 1);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(61, 61, 61, 1);
+}
+
+.wrapper {
+    min-width: 1080px;
+    width: 1080px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#container {
+    width: 100%;
+}

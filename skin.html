@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <title>Document</title>
+
+</head>
+
+<body>
+  <s_t3>
+    <div id="container">
+      <div id="header">
+        <div class="wrapper">
+          <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
+        </div>
+      </div>
+
+      <div id="contentWrap">
+        <div id="content">
+          <div class="wrapper">
+            <s_article_rep>
+              <!-- 글 목록 -->
+              <s_index_article_rep>
+                <div class="article-list">
+                  <a class="article-item" href="[##_article_rep_link_##]">
+                    <h1 class="title">[##_article_rep_title_##]</h1>
+                    <p class="summary">[##_article_rep_summary_##]</p>
+                  </a>
+                  <p class="info">
+                    <span class="date">[##_article_rep_date_##]</span>
+                  </p>
+                </div>
+              </s_index_article_rep>
+              <!-- 글 목록 -->
+            </s_article_rep>
+          </div>
+          <div class="wrapper">
+            <s_paging>
+              <!-- paging -->
+              <div class="paging">
+                <a [##_prev_page_##] class="[##_no_more_prev_##]">◀ PREV </a>
+                <span class="numbox">
+                  <s_paging_rep>
+                    <a [##_paging_rep_link_##] class="num">[[##_paging_rep_link_num_##]]</a>
+                  </s_paging_rep>
+                </span>
+                <a [##_next_page_##] class="[##_no_more_next_##]">NEXT ▶</a>
+              </div>
+              <!-- paging -->
+            </s_paging>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar">
+      <s_sidebar>
+        <s_sidebar_element>
+          <div class="category">
+            <h3>카테고리</h3>
+            [##_category_list_##]
+          </div>
+        </s_sidebar_element>
+      </s_sidebar>
+    </div>
+  </s_t3>
+</body>
+
+</html>
