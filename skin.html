@@ -22,6 +22,7 @@
         <div class="wrapper">
           <h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
         </div>
+
       </div>
 
       <div id="contentWrap">
@@ -45,24 +46,37 @@
             </s_article_rep>
           </div>
           <div class="wrapper">
-						<div class="paging-cover">
-							<s_paging>
-              <!-- paging -->
-              <div class="paging">
-                <a [##_prev_page_##] class="[##_no_more_prev_##]">PREV</a>
-                <span class="numbox">
-                  <s_paging_rep>
-                    <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
-                  </s_paging_rep>
-                </span>
-                <a [##_next_page_##] class="[##_no_more_next_##]">NEXT</a>
-              </div>
-              <!-- paging -->
-            </s_paging>
-						</div>
+            <div class="paging-cover">
+              <s_paging>
+                <!-- paging -->
+                <div class="paging">
+                  <a [##_prev_page_##] class="[##_no_more_prev_##]">PREV</a>
+                  <span class="numbox">
+                    <s_paging_rep>
+                      <a [##_paging_rep_link_##] class="num">[##_paging_rep_link_num_##]</a>
+                    </s_paging_rep>
+                  </span>
+                  <a [##_next_page_##] class="[##_no_more_next_##]">NEXT</a>
+                </div>
+                <!-- paging -->
+              </s_paging>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="header-option">
+      <span class="icon icon-search" id="search-toggle"></span>
+      <div class="area_search thema_apply none">
+        <form action="" method="get">
+          <s_search>
+            <input type="text" name="[##_search_name_##]" title="Search" placeholder="Search"
+              value="[##_search_text_##]" class="inp_search"
+              onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+          </s_search>
+        </form>
+      </div>
+      <span class="icon icon-menu" id="menubar"></span>
     </div>
     <div id="sidebar">
       <s_sidebar>
@@ -75,6 +89,7 @@
       </s_sidebar>
     </div>
   </s_t3>
+  <script src="./images/blog.js"></script>
 </body>
 
 </html>

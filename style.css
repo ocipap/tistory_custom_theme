@@ -27,11 +27,47 @@ a {
 
 #container {
     width: 100%;
+    position: relative;
 }
 
 #header {
     border-bottom: 1px solid #f0f0f0;
 }
+
+.clear-fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* icon 스타일 */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon.small{
+    width: 15px;
+    height: 15px;
+}
+
+.icon.icon-search {
+    background-image: url("./images/search.png")
+}
+
+.icon.icon-menu {
+    background-image: url("./images/menu.png")
+}
+
+.icon.icon-close {
+    background-image: url("./images/close.png")
+}
+
+/* 글목록 스타일 */
 
 .article-list {
     padding: .7rem 0;
@@ -57,6 +93,8 @@ a {
     margin: 1rem 0;
 }
 
+/* 페이징 스타일 */
+
 .paging-cover {
     font-size: 1.05rem;
     display: flex;
@@ -73,4 +111,45 @@ a {
     color: #000;
 }
 
+/* 검색 스타일 */
 
+.header-option{
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-option > *{
+    margin: 0 .5rem;
+}
+
+.header-option .icon {
+    cursor: pointer;
+}
+
+.header-option input[type="text"]{
+    border: none;
+    padding: 7px;
+    font-size: .9rem;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.header-option input[type="text"]:focus{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.header-option .area_search {
+    width: auto;
+    opacity: 1;
+    transition: opacity 0s, width 1s;
+    
+}
+
+.header-option .area_search.none{
+	display: none;
+    width: 0;
+    opacity: 0;
+}
